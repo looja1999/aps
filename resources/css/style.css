@@ -1,0 +1,304 @@
+/* Base color */
+/* #67128b */
+/* #8e44ad */
+/* ce76f3 */
+
+/* Initial setup */
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+html,
+body {
+  color: #555;
+  font-family: "lato", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* **************************************************************************************************** */
+
+/* Resuable */
+.row {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  letter-spacing: 1px;
+  line-height: 150%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #fff;
+  font-size: 350%;
+  font-weight: 200;
+  word-spacing: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 250%;
+  font-weight: 300;
+  word-spacing: 7px;
+}
+
+h2:after {
+  background-color: #67128b;
+  content: " ";
+  display: block;
+  height: 2px;
+  margin: 10px auto;
+  width: 50%;
+}
+
+h3 {
+  font-size: 150%;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 145%;
+  margin: 10px 0;
+  text-align: center;
+  word-spacing: 3px;
+}
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  border-radius: 50px;
+  border-color: #8e44ad;
+  background-color: #8e44ad;
+  color: white;
+  display: inline-block;
+  font-size: 130%;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: all 200ms;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #67128b;
+  border-color: #67128b;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+/* **************************************************************************************************** */
+
+/* -------------------------------------- */
+/* Header */
+/* -------------------------------------- */
+header {
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/vendors/img/CleanerPhoto1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-text-box {
+  width: 1140px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* navbar */
+nav {
+  padding-top: 20px;
+}
+
+/* logo */
+.logo {
+  background-color: #67128b;
+  color: #fff;
+  float: left;
+  font-size: 120%;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  border: 1px solid #67128b;
+  padding: 10px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 25px;
+  margin-right: 50px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  border-bottom: 3px solid transparent;
+  color: #fff;
+  font-size: 105%;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  word-spacing: 4px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 3px solid #67128b;
+  padding-bottom: 5px;
+}
+
+/* **************************************************************************************************** */
+
+/* -------------------------------------- */
+/* Section Services */
+/* -------------------------------------- */
+.section-services {
+  background-color: rgb(245, 245, 245);
+}
+
+.section-services-info {
+  margin: 50px auto;
+}
+
+/* Paragraphs */
+.section-services-info .col p {
+  width: 80%;
+  letter-spacing: 0.5px;
+  line-height: 150%;
+  font-weight: 400;
+  margin: 20px auto;
+  word-spacing: 0.5px;
+  text-align: justify;
+}
+/* Icon */
+.icon-big {
+  color: #67128b;
+  display: block;
+  font-size: 500%;
+  margin: 10px auto;
+}
+
+/* **************************************************************************************************** */
+
+/* -------------------------------------- */
+/* Section What we do  */
+/* -------------------------------------- */
+
+.section-gallery {
+  width: 100%;
+}
+
+/* Row gallery  */
+.row-gallery {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.row-gallery .col {
+  margin: 5px 5px;
+}
+
+.row-gallery .col div {
+  font-size: 130%;
+  font-weight: 400;
+  margin: 10px 30px;
+  text-align: center;
+  width: 90%;
+}
+
+.row-gallery .col div img {
+  width: 90%;
+  transform: scale(1.05);
+  height: 250px;
+  margin: 20px 0;
+  transition: all 200ms;
+}
+
+.row-gallery .col div img:hover {
+  transform: scale(1);
+}
+
+/* -------------------------------------- */
+/* Section About  */
+/* -------------------------------------- */
+.section-about {
+  background-color: rgb(245, 245, 245);
+}
+
+/* .section-about .col {
+  border: 1px solid black;
+} */
+.section-about .col:first-child {
+  color: #67128b;
+  font-size: 800%;
+  padding-top: 50px;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.section-about .col:last-child {
+  font-size: 120%;
+  letter-spacing: 1.5px;
+  line-height: 150%;
+  margin-left: 18px;
+  padding: 15px;
+  padding-right: 30px;
+  text-align: justify;
+  word-spacing: 4px;
+}
+
+/* -------------------------------------- */
+/* Section Contact  */
+/* -------------------------------------- */
+.row-form .col {
+  margin-top: 30px;
+}
+
+.section-contact .span_1_of_3 {
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 10px;
+  font-size: 110%;
+}
+
+input[type="email"],
+input[type="text"] {
+  height: 40px;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+  background: rgb(235, 235, 235);
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
