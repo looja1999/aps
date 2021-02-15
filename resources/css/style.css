@@ -274,9 +274,6 @@ nav {
 /* -------------------------------------- */
 /* Section Contact  */
 /* -------------------------------------- */
-/* .row-form .col {
-  margin-top: 30px;
-} */
 
 .section-contact .row:last-child {
   /* border: 1px solid black; */
@@ -324,7 +321,59 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  border: 1px solid black;
   width: 30%;
   margin-left: 35%;
+}
+
+/* -------------------------------------- */
+/* Footer   */
+/* -------------------------------------- */
+footer {
+  background-color: #555;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.secondary-nav {
+  float: left;
+  list-style: none;
+  margin-top: 10px;
+}
+.secondary-nav li,
+.social-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.secondary-nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 80%;
+}
+
+.social-nav {
+  float: right;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.social-nav li a:link,
+.social-nav li a:visited {
+  color: #ccc;
+  font-size: 130%;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 200ms;
+}
+
+.social-nav li a:active,
+.social-nav li a:hover {
+  color: rgb(160, 160, 160);
+}
+
+footer .row:last-child {
+  color: #ccc;
+  font-size: 90%;
+  text-align: center;
 }
