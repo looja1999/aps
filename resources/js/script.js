@@ -5,7 +5,7 @@ const header = document.querySelector("header");
 const headerOptions = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.13,
+  threshold: 0.1,
 };
 const headerObs = function (entries, observer) {
   const [entry] = entries;
