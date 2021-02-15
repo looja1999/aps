@@ -222,6 +222,7 @@ nav {
 .sticky .sticky-nav li a:link,
 .sticky .sticky-nav li a:visited {
   border-bottom: 3px solid transparent;
+  color: #8e44ad;
   font-size: 90%;
   font-weight: 400;
   letter-spacing: 1px;
