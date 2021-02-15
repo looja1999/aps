@@ -23,7 +23,6 @@ body {
   font-size: 18px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
 }
 
 /* **************************************************************************************************** */
@@ -90,7 +89,8 @@ input[type="submit"] {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover {
   background-color: #67128b;
   border-color: #67128b;
 }
@@ -274,31 +274,57 @@ nav {
 /* -------------------------------------- */
 /* Section Contact  */
 /* -------------------------------------- */
-.row-form .col {
+/* .row-form .col {
+  margin-top: 30px;
+} */
+
+.section-contact .row:last-child {
+  /* border: 1px solid black; */
+  margin-top: 50px;
+}
+
+.section-contact .row .row-form:last-child {
+  margin-top: 10px;
+}
+
+.row-form {
+  width: 70%;
+  margin-left: 15%;
   margin-top: 30px;
 }
 
-.section-contact .span_1_of_3 {
-  text-align: right;
-  padding-right: 30px;
-  padding-top: 10px;
-  font-size: 110%;
+label,
+input {
+  display: block;
 }
 
-input[type="email"],
-input[type="text"] {
-  height: 40px;
+label {
+  font-size: 130%;
 }
 
-input[type="email"],
 input[type="text"],
+input[type="email"],
 textarea {
-  background: rgb(235, 235, 235);
+  background-color: rgb(245, 244, 244);
+  margin-top: 10px;
   width: 100%;
+  border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #8e44ad;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 30px;
 }
 
 input[type="submit"] {
+  border: 1px solid black;
   width: 30%;
   margin-left: 35%;
-  margin-right: 35%;
 }
